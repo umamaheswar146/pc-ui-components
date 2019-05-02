@@ -1,0 +1,39 @@
+.card-diff {
+  border-bottom: 3px solid #e6e4e4;
+}
+
+.card-diff:hover {
+  border-bottom: 3px solid salmon;
+}
+
+.img-part {
+  -webkit-transition: -webkit-transform 5s, -webkit-filter .5s ease-in;
+  transition: -webkit-transform 5s, -webkit-filter .5s ease-in;
+  transition: transform 5s, filter .5s ease-in;
+  transition: transform 5s, filter .5s ease-in, -webkit-transform 5s, -webkit-filter .5s ease-in;
+}
+
+.img-part .hover-diff {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f27c66;
+  width: auto;
+  height: 264px;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.img-part:hover .hover-diff {
+  opacity: 0.6;
+}
+
+.img-part:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=cards.css.map */

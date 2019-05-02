@@ -1,0 +1,37 @@
+.card-diff{
+    border-bottom: 3px solid rgb(230, 228, 228);
+    // height: 120px;
+    &:hover{
+        border-bottom: 3px solid salmon;
+    }
+    
+}
+
+.img-part{
+    // transform-origin: 65% 75%;
+  transition: transform 5s, filter .5s ease-in;
+    .hover-diff{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #f27c66;
+        width: auto;
+        height: 264px;
+        opacity: 0;
+        transition: opacity 0.1s;
+    }   
+    &:hover  .hover-diff{
+       
+        opacity: 0.6;
+      
+    }  
+    &:hover  {
+        transform: scale(1.2)
+    } 
+
+
+
+}
